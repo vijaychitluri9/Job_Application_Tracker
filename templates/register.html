@@ -1,0 +1,6 @@
+{% extends "base.html" %}{% block title %}Register · Job Tracker{% endblock %}{% block content %}
+<div class="auth-wrap"><div class="auth-card"><div class="brand-mark">💼</div><h1 class="h3 fw-bold text-center">Create your account</h1><p class="text-secondary text-center mb-4">Keep every opportunity in one place</p>
+<form method="post"><div class="mb-3"><label class="form-label" for="name">Full name</label><input class="form-control form-control-lg" id="name" name="name" autocomplete="name" required></div>
+<div class="mb-3"><label class="form-label" for="email">Email address</label><input class="form-control form-control-lg" type="email" id="email" name="email" autocomplete="email" required></div>
+<div class="mb-3"><label class="form-label" for="password">Password</label><input class="form-control form-control-lg" type="password" id="password" name="password" minlength="8" autocomplete="new-password" required><div class="form-text">Use at least 8 characters.</div></div>
+<button class="btn btn-primary btn-lg w-100 mt-2" type="submit">Create account</button></form><p class="text-center mt-4 mb-0">Already registered? <a href="{{ url_for('login') }}">Sign in</a></p></div></div>{% endblock %}
